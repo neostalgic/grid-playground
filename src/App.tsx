@@ -4,11 +4,11 @@ import { Grid } from './components/Grid'
 import { ColorPicker } from './components/ColorPicker'
 import { GridManager } from './components/GridManager'
 import { InfoPopover } from './components/InfoPopover'
-import { CellColor, GridData } from './types/grid'
+import { CellColor, GridData, PRESET_COLORS } from './types/grid'
 
 function App() {
   const [gridConfig, setGridConfig] = useState({ width: 32, height: 32 })
-  const [selectedColor, setSelectedColor] = useState<CellColor>('#000000')
+  const [selectedColor, setSelectedColor] = useState<CellColor>(PRESET_COLORS[0])
   const [gridData, setGridData] = useState<GridData>({
     width: gridConfig.width,
     height: gridConfig.height,
