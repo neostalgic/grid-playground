@@ -3,6 +3,7 @@ import './App.css'
 import { Grid } from './components/Grid'
 import { ColorPicker } from './components/ColorPicker'
 import { GridManager } from './components/GridManager'
+import { InfoPopover } from './components/InfoPopover'
 import { CellColor, GridData } from './types/grid'
 
 function App() {
@@ -55,11 +56,8 @@ function App() {
   return (
     <div className="app">
       <div className="toolbar">
-        <div className="toolbar-section">
-          <span className="app-title">Grid Playground</span>
-        </div>
         
-        <div className="toolbar-section size-controls">
+        {/* <div className="toolbar-section size-controls">
           <label>
             <span>W:</span>
             <input
@@ -80,7 +78,7 @@ function App() {
               max="50"
             />
           </label>
-        </div>
+        </div> */}
 
         <div className="toolbar-section">
           <ColorPicker
@@ -95,6 +93,8 @@ function App() {
             onLoadGrid={handleLoadGrid}
           />
         </div>
+
+        <InfoPopover />
       </div>
 
       <div className="grid-container">
