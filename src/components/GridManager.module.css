@@ -1,0 +1,102 @@
+.gridManager {
+    margin: 0;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.saveControls {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.gridNameInput {
+    padding: 8px;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #2a2a2a;
+    color: #ffffff;
+}
+
+.gridNameInput:focus {
+    outline: none;
+    border-color: #646cff;
+}
+
+.loadControls {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000;
+    min-width: 200px;
+}
+
+.gridItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.gridItem:last-child {
+    border-bottom: none;
+}
+
+.gridInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.gridActions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.loadItemButton {
+    background-color: #4CAF50;
+}
+
+.loadItemButton:hover {
+    background-color: #45a049;
+}
+
+.deleteButton {
+    background-color: #f44336;
+}
+
+.deleteButton:hover {
+    background-color: #da190b;
+}
+
+.noGrids {
+    padding: 1rem;
+    text-align: center;
+    color: #888;
+}
+
+.loadButton {
+    min-width: 120px;
+} 
